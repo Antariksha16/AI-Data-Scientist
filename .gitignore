@@ -1,0 +1,59 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets — keep example configuration
+**/.env
+**/.env.*
+!**/.env.example
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# Uploaded datasets and generated outputs
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/outputs/*
+!backend/outputs/.gitkeep
+datasets/*
+!datasets/.gitkeep
+models/*
+!models/.gitkeep
+reports/*
+!reports/.gitkeep
+api_downloads/
+eda_api_downloads/
+
+# Old backups
+backups/
+m10*_backup.*
+m10*-backup-*
+*.m4-backup
+*.before-*
+milestone7_input_files.zip
+
+# Empty debugging marker files
+/bagging
+/boosting
+/kernel
+/linear
+/success
+
+# Temporary files
+project_structure.txt
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+desktop.ini

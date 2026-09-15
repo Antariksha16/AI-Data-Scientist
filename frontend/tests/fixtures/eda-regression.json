@@ -1,0 +1,1066 @@
+{
+  "filename": "synthetic.csv",
+  "selected_target": "Outcome",
+  "analysis_id": "22222222222222222222222222222222",
+  "report": {
+    "report_status": "complete",
+    "target_column": "Outcome",
+    "automatic_data_modification_performed": false,
+    "summary": {
+      "rows": 48,
+      "candidate_features": 3,
+      "problem_type": "regression",
+      "total_missing_cells": 1,
+      "duplicate_rows": 0
+    },
+    "dataset_overview": {
+      "target_column": "Outcome",
+      "shape": {
+        "rows": 48,
+        "columns": 4,
+        "candidate_features": 3,
+        "total_cells": 192
+      },
+      "memory": {
+        "memory_usage_bytes": 3860,
+        "memory_usage_megabytes": 0.0037
+      },
+      "schema": {
+        "column_names_are_unique": true,
+        "duplicate_column_names": [],
+        "target_column_occurrences": 1,
+        "dtype_counts": {
+          "float64": 2,
+          "object": 1,
+          "datetime64[ns]": 1
+        },
+        "semantic_type_counts": {
+          "continuous_numerical": 2,
+          "categorical": 1,
+          "datetime": 1
+        },
+        "schema_ready_for_eda": true
+      },
+      "missingness": {
+        "total_missing_cells": 1,
+        "total_missing_percentage": 0.52,
+        "complete_rows": 47,
+        "complete_row_percentage": 97.92,
+        "rows_with_missing_values": 1,
+        "rows_with_missing_percentage": 2.08,
+        "fully_empty_rows": 0,
+        "high_missing_rows": 0,
+        "row_missing_warning_threshold": 0.5,
+        "high_missing_columns": [],
+        "column_summary": [
+          {
+            "column": "Measurement",
+            "missing_values": 1,
+            "missing_percentage": 2.08
+          }
+        ],
+        "top_missingness_patterns": [
+          {
+            "missing_column_count": 0,
+            "missing_columns": [],
+            "missing_columns_truncated": false,
+            "row_count": 47,
+            "row_percentage": 97.92
+          },
+          {
+            "missing_column_count": 1,
+            "missing_columns": [
+              "Measurement"
+            ],
+            "missing_columns_truncated": false,
+            "row_count": 1,
+            "row_percentage": 2.08
+          }
+        ]
+      },
+      "duplicates": {
+        "duplicate_row_analysis_available": true,
+        "duplicate_rows": 0,
+        "duplicate_row_percentage": 0.0,
+        "identical_column_pairs": [],
+        "identical_column_scan_limit": 30,
+        "identical_column_scan_omitted_positions": []
+      },
+      "quality_flags": {
+        "high_missing_columns": [],
+        "constant_columns": [],
+        "near_constant_columns": [],
+        "high_cardinality_columns": [],
+        "free_text_columns": [],
+        "datetime_columns": [
+          "ObservedAt"
+        ],
+        "infinite_value_columns": [],
+        "identifier_candidates": [],
+        "unsupported_columns": []
+      },
+      "column_profiles": [
+        {
+          "column": "Measurement",
+          "column_key": "Measurement",
+          "position": 0,
+          "role": "feature",
+          "data_type": "float64",
+          "semantic_type": "continuous_numerical",
+          "total_rows": 48,
+          "observed_values": 47,
+          "missing_values": 1,
+          "missing_percentage": 2.08,
+          "unique_values": 47,
+          "unique_ratio": 1.0,
+          "constant_or_empty": false,
+          "near_constant": false,
+          "high_missing": false,
+          "high_cardinality": false,
+          "identifier_candidate": false,
+          "identifier_evidence": [],
+          "infinite_values": 0,
+          "average_text_length": null,
+          "sample_values": [
+            30.33789534744446,
+            31.44559699344992,
+            33.1564411291927
+          ],
+          "memory_usage_bytes": 384,
+          "warnings": []
+        },
+        {
+          "column": "Region",
+          "column_key": "Region",
+          "position": 1,
+          "role": "feature",
+          "data_type": "object",
+          "semantic_type": "categorical",
+          "total_rows": 48,
+          "observed_values": 48,
+          "missing_values": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3,
+          "unique_ratio": 0.0625,
+          "constant_or_empty": false,
+          "near_constant": false,
+          "high_missing": false,
+          "high_cardinality": false,
+          "identifier_candidate": false,
+          "identifier_evidence": [],
+          "infinite_values": 0,
+          "average_text_length": 4.6667,
+          "sample_values": [
+            "North",
+            "South",
+            "West"
+          ],
+          "memory_usage_bytes": 2576,
+          "warnings": []
+        },
+        {
+          "column": "ObservedAt",
+          "column_key": "ObservedAt",
+          "position": 2,
+          "role": "feature",
+          "data_type": "datetime64[ns]",
+          "semantic_type": "datetime",
+          "total_rows": 48,
+          "observed_values": 48,
+          "missing_values": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 48,
+          "unique_ratio": 1.0,
+          "constant_or_empty": false,
+          "near_constant": false,
+          "high_missing": false,
+          "high_cardinality": false,
+          "identifier_candidate": false,
+          "identifier_evidence": [],
+          "infinite_values": 0,
+          "average_text_length": null,
+          "sample_values": [
+            "2025-01-01 00:00:00",
+            "2025-01-02 00:00:00",
+            "2025-01-03 00:00:00"
+          ],
+          "memory_usage_bytes": 384,
+          "warnings": []
+        },
+        {
+          "column": "Outcome",
+          "column_key": "Outcome",
+          "position": 3,
+          "role": "target",
+          "data_type": "float64",
+          "semantic_type": "continuous_numerical",
+          "total_rows": 48,
+          "observed_values": 48,
+          "missing_values": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 48,
+          "unique_ratio": 1.0,
+          "constant_or_empty": false,
+          "near_constant": false,
+          "high_missing": false,
+          "high_cardinality": false,
+          "identifier_candidate": false,
+          "identifier_evidence": [],
+          "infinite_values": 0,
+          "average_text_length": null,
+          "sample_values": [
+            116.93250969113994,
+            125.06882930996295,
+            159.99435566808592
+          ],
+          "memory_usage_bytes": 384,
+          "warnings": []
+        }
+      ],
+      "basic_modeling_readiness": {
+        "ready": true,
+        "blockers": [],
+        "scope": "Basic schema and target usability only; leakage, preprocessing, and model-specific checks are reported separately."
+      },
+      "warnings": [],
+      "automatic_data_modification_performed": false
+    },
+    "target_statistics": {
+      "target_column": "Outcome",
+      "data_type": "float64",
+      "problem_type": "regression",
+      "problem_type_source": "user_override",
+      "target_analysis": {
+        "target_column": "Outcome",
+        "data_type": "float64",
+        "unique_values": 48,
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "problem_type": "regression"
+      },
+      "total_rows": 48,
+      "observed_target_rows": 48,
+      "missing_target_rows": 0,
+      "missing_target_percentage": 0.0,
+      "unique_observed_values": 48,
+      "training_usable": true,
+      "classification_statistics": null,
+      "regression_statistics": {
+        "finite_count": 48,
+        "non_numeric_values": 0,
+        "infinite_values": 0,
+        "unique_finite_values": 48,
+        "mean": 147.5891,
+        "median": 144.6542,
+        "standard_deviation": 25.8927,
+        "variance": 670.4316,
+        "minimum": 96.6988,
+        "first_percentile": 101.4544,
+        "fifth_percentile": 113.4464,
+        "first_quartile": 126.557,
+        "third_quartile": 160.4853,
+        "ninety_fifth_percentile": 188.8328,
+        "ninety_ninth_percentile": 212.0703,
+        "maximum": 222.8466,
+        "range": 126.1477,
+        "iqr": 33.9283,
+        "skewness": 0.5248,
+        "kurtosis": 0.3619,
+        "zero_count": 0,
+        "negative_count": 0,
+        "lower_outlier_bound": 75.6646,
+        "upper_outlier_bound": 211.3778,
+        "outlier_count": 1,
+        "outlier_percentage": 2.08,
+        "distribution_shape": "approximately_symmetric",
+        "target_transformation_recommendation": null,
+        "target_scaling_guidance": "review_for_linear_distance_based_or_neural_models",
+        "recommended_metrics": [
+          "mae",
+          "rmse",
+          "r2"
+        ],
+        "automatic_target_transformation_performed": false,
+        "automatic_outlier_removal_performed": false
+      },
+      "warnings": [],
+      "recommendations": [
+        "Report MAE and RMSE together; add R-squared when its interpretation is appropriate."
+      ],
+      "automatic_target_modification_performed": false
+    },
+    "numerical_statistics": {
+      "target_column": "Outcome",
+      "numerical_columns": [
+        "Measurement"
+      ],
+      "numerical_feature_count": 1,
+      "numerical_statistics": {
+        "Measurement": {
+          "data_type": "float64",
+          "total_rows": 48,
+          "finite_count": 47,
+          "missing_values": 1,
+          "missing_percentage": 2.08,
+          "infinite_values": 0,
+          "unique_values": 47,
+          "unique_ratio": 1.0,
+          "mean": 29.2878,
+          "median": 29.0435,
+          "mode": null,
+          "standard_deviation": 3.7563,
+          "variance": 14.1094,
+          "minimum": 21.5633,
+          "first_percentile": 21.5736,
+          "fifth_percentile": 22.7293,
+          "first_quartile": 27.6506,
+          "third_quartile": 32.4193,
+          "ninety_fifth_percentile": 34.1929,
+          "ninety_ninth_percentile": 36.2634,
+          "maximum": 37.4747,
+          "range": 15.9114,
+          "iqr": 4.7687,
+          "skewness": -0.2565,
+          "kurtosis": -0.4396,
+          "zero_count": 0,
+          "zero_percentage": 0.0,
+          "negative_count": 0,
+          "negative_percentage": 0.0,
+          "near_constant": false,
+          "lower_outlier_bound": 20.4975,
+          "upper_outlier_bound": 39.5724,
+          "outlier_count": 0,
+          "outlier_percentage": 0.0,
+          "distribution_shape": "approximately_symmetric",
+          "recommended_scaler": "standard",
+          "transformation_recommendation": null
+        }
+      }
+    },
+    "categorical_statistics": {
+      "target_column": "Outcome",
+      "categorical_columns": [
+        "Region"
+      ],
+      "categorical_feature_count": 1,
+      "categorical_statistics": {
+        "Region": {
+          "data_type": "object",
+          "total_rows": 48,
+          "observed_count": 48,
+          "missing_values": 0,
+          "missing_percentage": 0.0,
+          "unique_values": 3,
+          "unique_ratio": 0.0625,
+          "cardinality_level": "low",
+          "high_cardinality": false,
+          "most_frequent_value": "North",
+          "most_frequent_count": 16,
+          "most_frequent_percentage": 33.33,
+          "dominant_category": false,
+          "near_constant": false,
+          "rare_category_count": 0,
+          "rare_observation_count": 0,
+          "rare_observation_percentage": 0.0,
+          "top_categories": [
+            {
+              "value": "North",
+              "count": 16,
+              "percentage": 33.33
+            },
+            {
+              "value": "South",
+              "count": 16,
+              "percentage": 33.33
+            },
+            {
+              "value": "West",
+              "count": 16,
+              "percentage": 33.33
+            }
+          ],
+          "categories_truncated": false,
+          "other_observation_count": 0,
+          "recommended_encoding": "one_hot",
+          "missing_category_review": false
+        }
+      }
+    },
+    "datetime_statistics": {
+      "target_column": "Outcome",
+      "datetime_parse_threshold": 0.9,
+      "datetime_columns": [
+        "ObservedAt"
+      ],
+      "native_datetime_columns": [
+        "ObservedAt"
+      ],
+      "inferred_datetime_columns": [],
+      "datetime_feature_count": 1,
+      "datetime_statistics": {
+        "ObservedAt": {
+          "data_type": "datetime64[ns]",
+          "detection_method": "native_datetime_dtype",
+          "total_rows": 48,
+          "observed_count": 48,
+          "missing_values": 0,
+          "missing_percentage": 0.0,
+          "parsed_values": 48,
+          "parse_success_percentage": 100.0,
+          "invalid_datetime_values": 0,
+          "invalid_datetime_percentage": 0.0,
+          "inference_sample_size": 48,
+          "sample_parse_success_percentage": 100.0,
+          "sample_datetime_hint_percentage": 100.0,
+          "unique_datetimes": 48,
+          "duplicate_datetime_count": 0,
+          "duplicate_datetime_percentage": 0.0,
+          "earliest_datetime": "2025-01-01T00:00:00+00:00",
+          "latest_datetime": "2025-02-17T00:00:00+00:00",
+          "time_span_days": 47.0,
+          "is_monotonic_increasing": true,
+          "is_monotonic_decreasing": false,
+          "contains_time_component": false,
+          "component_unique_values": {
+            "year": 1,
+            "quarter": 1,
+            "month": 2,
+            "day_of_month": 31,
+            "day_of_week": 7,
+            "hour": 1,
+            "minute": 1
+          },
+          "minimum_gap_days": 1.0,
+          "median_gap_days": 1.0,
+          "maximum_gap_days": 1.0,
+          "regular_interval": true,
+          "timezone_handling": "normalized_to_utc_for_analysis",
+          "recommended_datetime_features": [
+            "month",
+            "day_of_month",
+            "day_of_week",
+            "elapsed_time_from_earliest"
+          ]
+        }
+      },
+      "limitations": [
+        "Text datetime inference is conservative and may not recognize numeric spreadsheet serial dates.",
+        "Ambiguous text dates are interpreted using Pandas parsing rules and should be reviewed.",
+        "All successfully parsed values are normalized to UTC for consistent analysis."
+      ]
+    },
+    "feature_target_relationships": {
+      "target_column": "Outcome",
+      "problem_type": "regression",
+      "candidate_feature_count": 3,
+      "analyzed_feature_count": 3,
+      "skipped_feature_count": 0,
+      "skipped_features": [],
+      "relationship_thresholds": {
+        "weak": 0.1,
+        "moderate": 0.3,
+        "strong": 0.5,
+        "potential_leakage": 0.995
+      },
+      "feature_relationships": {
+        "Measurement": {
+          "feature": "Measurement",
+          "feature_type": "numerical",
+          "target_problem_type": "regression",
+          "analysis_method": "pearson_and_spearman_correlation",
+          "status": "analyzed",
+          "sample_size": 47,
+          "excluded_pairwise_rows": 1,
+          "primary_score": 0.1212,
+          "relationship_strength": "weak",
+          "potential_leakage": false,
+          "warnings": [],
+          "pearson_correlation": 0.1176,
+          "spearman_correlation": 0.1212,
+          "direction": "positive"
+        },
+        "Region": {
+          "feature": "Region",
+          "feature_type": "categorical",
+          "target_problem_type": "regression",
+          "analysis_method": "correlation_ratio_eta",
+          "status": "analyzed",
+          "sample_size": 48,
+          "excluded_pairwise_rows": 0,
+          "primary_score": 0.0629,
+          "relationship_strength": "negligible",
+          "potential_leakage": false,
+          "warnings": [],
+          "category_count": 3,
+          "eta_squared": 0.004,
+          "eta": 0.0629,
+          "group_statistics": [
+            {
+              "category": "North",
+              "count": 16,
+              "mean": 149.8146,
+              "median": 147.7052,
+              "standard_deviation": 25.6594
+            },
+            {
+              "category": "South",
+              "count": 16,
+              "mean": 146.0497,
+              "median": 140.4003,
+              "standard_deviation": 31.521
+            },
+            {
+              "category": "West",
+              "count": 16,
+              "mean": 146.903,
+              "median": 155.6584,
+              "standard_deviation": 20.9856
+            }
+          ],
+          "groups_truncated": false
+        },
+        "ObservedAt": {
+          "feature": "ObservedAt",
+          "feature_type": "datetime",
+          "target_problem_type": "regression",
+          "analysis_method": "temporal_pearson_and_spearman_correlation",
+          "status": "analyzed",
+          "sample_size": 48,
+          "excluded_pairwise_rows": 0,
+          "primary_score": 0.1389,
+          "relationship_strength": "weak",
+          "potential_leakage": false,
+          "warnings": [],
+          "pearson_correlation": 0.1389,
+          "spearman_correlation": 0.1013,
+          "direction": "positive",
+          "temporal_encoding": "UTC days since 1970-01-01, used only for relationship calculation"
+        }
+      },
+      "ranked_features": [
+        {
+          "feature": "ObservedAt",
+          "feature_type": "datetime",
+          "analysis_method": "temporal_pearson_and_spearman_correlation",
+          "primary_score": 0.1389,
+          "relationship_strength": "weak",
+          "potential_leakage": false
+        },
+        {
+          "feature": "Measurement",
+          "feature_type": "numerical",
+          "analysis_method": "pearson_and_spearman_correlation",
+          "primary_score": 0.1212,
+          "relationship_strength": "weak",
+          "potential_leakage": false
+        },
+        {
+          "feature": "Region",
+          "feature_type": "categorical",
+          "analysis_method": "correlation_ratio_eta",
+          "primary_score": 0.0629,
+          "relationship_strength": "negligible",
+          "potential_leakage": false
+        }
+      ],
+      "strong_relationships": [],
+      "potential_leakage_feature_count": 0,
+      "potential_leakage_features": [],
+      "automatic_feature_removal_performed": false,
+      "limitations": [
+        "Association does not prove causation or business usefulness.",
+        "Pearson and Spearman do not detect every nonlinear numerical relationship.",
+        "Cramer's V and eta can be unstable for sparse or high-cardinality groups.",
+        "A near-perfect relationship is only a leakage review flag; semantic and time-based review is still required."
+      ]
+    },
+    "feature_feature_relationships": {
+      "target_column": "Outcome",
+      "candidate_feature_count": 3,
+      "eligible_feature_count": 3,
+      "selected_feature_count": 3,
+      "selected_features": [
+        "Region",
+        "ObservedAt",
+        "Measurement"
+      ],
+      "numerical_features": [
+        "ObservedAt",
+        "Measurement"
+      ],
+      "categorical_features": [
+        "Region"
+      ],
+      "datetime_features": [
+        "ObservedAt"
+      ],
+      "excluded_high_cardinality_features": [],
+      "omitted_due_feature_limit": [],
+      "max_pairwise_features": 30,
+      "pair_count": 3,
+      "analyzed_pair_count": 3,
+      "skipped_pair_count": 0,
+      "pair_relationships": [
+        {
+          "feature_1": "ObservedAt",
+          "feature_2": "Measurement",
+          "feature_1_type": "datetime",
+          "feature_2_type": "numerical",
+          "analysis_method": "temporal_pearson_and_spearman_correlation",
+          "status": "analyzed",
+          "sample_size": 47,
+          "excluded_pairwise_rows": 1,
+          "primary_score": 0.1062,
+          "relationship_strength": "weak",
+          "high_association": false,
+          "warnings": [],
+          "pearson_correlation": -0.1062,
+          "spearman_correlation": -0.0993
+        },
+        {
+          "feature_1": "ObservedAt",
+          "feature_2": "Region",
+          "feature_1_type": "datetime",
+          "feature_2_type": "categorical",
+          "analysis_method": "correlation_ratio_eta",
+          "status": "analyzed",
+          "sample_size": 48,
+          "excluded_pairwise_rows": 0,
+          "primary_score": 0.0589,
+          "relationship_strength": "negligible",
+          "high_association": false,
+          "warnings": [],
+          "eta_squared": 0.0035,
+          "eta": 0.0589
+        },
+        {
+          "feature_1": "Measurement",
+          "feature_2": "Region",
+          "feature_1_type": "numerical",
+          "feature_2_type": "categorical",
+          "analysis_method": "correlation_ratio_eta",
+          "status": "analyzed",
+          "sample_size": 47,
+          "excluded_pairwise_rows": 1,
+          "primary_score": 0.2068,
+          "relationship_strength": "weak",
+          "high_association": false,
+          "warnings": [],
+          "eta_squared": 0.0428,
+          "eta": 0.2068
+        }
+      ],
+      "ranked_pairs": [
+        {
+          "feature_1": "Measurement",
+          "feature_2": "Region",
+          "feature_1_type": "numerical",
+          "feature_2_type": "categorical",
+          "analysis_method": "correlation_ratio_eta",
+          "status": "analyzed",
+          "sample_size": 47,
+          "excluded_pairwise_rows": 1,
+          "primary_score": 0.2068,
+          "relationship_strength": "weak",
+          "high_association": false,
+          "warnings": [],
+          "eta_squared": 0.0428,
+          "eta": 0.2068
+        },
+        {
+          "feature_1": "ObservedAt",
+          "feature_2": "Measurement",
+          "feature_1_type": "datetime",
+          "feature_2_type": "numerical",
+          "analysis_method": "temporal_pearson_and_spearman_correlation",
+          "status": "analyzed",
+          "sample_size": 47,
+          "excluded_pairwise_rows": 1,
+          "primary_score": 0.1062,
+          "relationship_strength": "weak",
+          "high_association": false,
+          "warnings": [],
+          "pearson_correlation": -0.1062,
+          "spearman_correlation": -0.0993
+        },
+        {
+          "feature_1": "ObservedAt",
+          "feature_2": "Region",
+          "feature_1_type": "datetime",
+          "feature_2_type": "categorical",
+          "analysis_method": "correlation_ratio_eta",
+          "status": "analyzed",
+          "sample_size": 48,
+          "excluded_pairwise_rows": 0,
+          "primary_score": 0.0589,
+          "relationship_strength": "negligible",
+          "high_association": false,
+          "warnings": [],
+          "eta_squared": 0.0035,
+          "eta": 0.0589
+        }
+      ],
+      "pearson_matrix": {
+        "ObservedAt": {
+          "ObservedAt": 1.0,
+          "Measurement": -0.1062
+        },
+        "Measurement": {
+          "ObservedAt": -0.1062,
+          "Measurement": 1.0
+        }
+      },
+      "spearman_matrix": {
+        "ObservedAt": {
+          "ObservedAt": 1.0,
+          "Measurement": -0.0993
+        },
+        "Measurement": {
+          "ObservedAt": -0.0993,
+          "Measurement": 1.0
+        }
+      },
+      "cramers_v_matrix": {
+        "Region": {
+          "Region": 1.0
+        }
+      },
+      "mixed_eta_matrix": {
+        "ObservedAt": {
+          "Region": 0.0589
+        },
+        "Measurement": {
+          "Region": 0.2068
+        }
+      },
+      "high_association_threshold": 0.9,
+      "high_association_pair_count": 0,
+      "high_association_pairs": [],
+      "redundancy_groups": [],
+      "multicollinearity_report": {
+        "status": "analyzed",
+        "row_count": 48,
+        "feature_count": 2,
+        "features_analyzed": [
+          "ObservedAt",
+          "Measurement"
+        ],
+        "features_excluded": [],
+        "median_imputation_used": true,
+        "median_imputed_value_count": 1,
+        "condition_number": 1.1061,
+        "moderate_vif_threshold": 5.0,
+        "high_vif_threshold": 10.0,
+        "vif_statistics": [
+          {
+            "feature": "ObservedAt",
+            "vif": 1.0102,
+            "is_infinite": false,
+            "r_squared_against_other_features": 0.0101,
+            "severity": "low"
+          },
+          {
+            "feature": "Measurement",
+            "vif": 1.0102,
+            "is_infinite": false,
+            "r_squared_against_other_features": 0.0101,
+            "severity": "low"
+          }
+        ],
+        "moderate_vif_features": [],
+        "high_vif_features": [],
+        "automatic_feature_removal_performed": false,
+        "interpretation": "VIF measures how well each numerical feature can be predicted from the other numerical features."
+      },
+      "automatic_feature_removal_performed": false,
+      "limitations": [
+        "High association does not prove that either feature should be removed.",
+        "VIF is calculated only for original numerical and datetime features, before one-hot encoding.",
+        "Median values are used only in the temporary VIF matrix; the source DataFrame is not modified.",
+        "Pairwise association cannot identify every multivariate or nonlinear dependency."
+      ]
+    },
+    "preprocessing_context": {
+      "cleaning_plan": null,
+      "outlier_report": null,
+      "leakage_report": null
+    },
+    "warnings": [],
+    "recommendations": [],
+    "limitations": [
+      "Synthetic module-contract fixture; preprocessing context is intentionally not generated."
+    ],
+    "failed_sections": [],
+    "partial_sections": [],
+    "section_errors": [],
+    "section_status": {
+      "dataset_overview": "success",
+      "target_statistics": "success",
+      "numerical_statistics": "success",
+      "categorical_statistics": "success",
+      "datetime_statistics": "success",
+      "feature_target_relationships": "success",
+      "feature_feature_relationships": "success"
+    },
+    "insights": {
+      "insight_report_type": "automated_eda_insights",
+      "insight_report_version": "1.0",
+      "source_eda_report_version": null,
+      "target_column": "Outcome",
+      "source_report_status": "complete",
+      "generated_insight_count": 3,
+      "insight_count": 3,
+      "insights_truncated": false,
+      "max_insights": 100,
+      "severity_counts": {
+        "critical": 0,
+        "high": 0,
+        "medium": 3,
+        "low": 0,
+        "info": 0
+      },
+      "category_counts": {
+        "numerical_distribution": 1,
+        "target": 1,
+        "temporal": 1
+      },
+      "executive_summary": "EDA generated 3 prioritized insights. No critical or high-severity finding was detected, but preprocessing decisions still require review.",
+      "next_actions": [
+        "Validate extreme outcomes, compare robust losses or metrics, and do not remove them automatically.",
+        "Fit the configured numerical imputer using training data only and preserve missingness indicators when useful.",
+        "Confirm the prediction-time boundary and use chronological or group-aware validation when the use case is temporal."
+      ],
+      "prioritized_insights": [
+        {
+          "insight_id": "target_regression_outliers",
+          "severity": "medium",
+          "category": "target",
+          "title": "The regression target contains IQR outliers",
+          "explanation": "Extreme target values can dominate squared-error losses, but they may also represent important valid cases.",
+          "evidence": {
+            "outlier_count": 1,
+            "outlier_percentage": 2.08
+          },
+          "affected_columns": [
+            "Outcome"
+          ],
+          "recommendation": "Validate extreme outcomes, compare robust losses or metrics, and do not remove them automatically.",
+          "requires_human_review": true,
+          "automatic_action_performed": false,
+          "priority_rank": 1
+        },
+        {
+          "insight_id": "numerical_missing_values",
+          "severity": "medium",
+          "category": "numerical_distribution",
+          "title": "Numerical features require missing-value handling",
+          "explanation": "Many estimators cannot directly accept missing numerical values, and the imputation strategy affects their distribution.",
+          "evidence": {
+            "columns": [
+              "Measurement"
+            ]
+          },
+          "affected_columns": [
+            "Measurement"
+          ],
+          "recommendation": "Fit the configured numerical imputer using training data only and preserve missingness indicators when useful.",
+          "requires_human_review": true,
+          "automatic_action_performed": false,
+          "priority_rank": 2
+        },
+        {
+          "insight_id": "datetime_split_review",
+          "severity": "medium",
+          "category": "temporal",
+          "title": "Datetime features require temporal leakage review",
+          "explanation": "Random splitting can let future observations influence past predictions when rows represent a time sequence.",
+          "evidence": {
+            "datetime_columns": [
+              "ObservedAt"
+            ]
+          },
+          "affected_columns": [
+            "ObservedAt"
+          ],
+          "recommendation": "Confirm the prediction-time boundary and use chronological or group-aware validation when the use case is temporal.",
+          "requires_human_review": true,
+          "automatic_action_performed": false,
+          "priority_rank": 3
+        }
+      ],
+      "limitations": [
+        "Insights are deterministic interpretations of configured statistical rules and do not replace domain expertise.",
+        "Severity represents modeling risk or review urgency, not business impact.",
+        "Automated association checks do not establish causation, fairness, privacy compliance, or deployment suitability."
+      ],
+      "automatic_data_modification_performed": false
+    },
+    "visualizations": {
+      "visualization_report_type": "automated_eda_visualizations",
+      "visualization_report_version": "1.0",
+      "visualization_status": "complete",
+      "target_column": "Outcome",
+      "problem_type": "regression",
+      "output_directory": null,
+      "image_format": "png",
+      "mime_type": "image/png",
+      "dpi": 120,
+      "backend": "Agg",
+      "sampling": {
+        "original_rows": 48,
+        "plotted_rows": 48,
+        "sampling_performed": false,
+        "max_plot_rows": 10000,
+        "random_state": 42
+      },
+      "limits": {
+        "max_categories_displayed": 20,
+        "max_features_visualized": 20,
+        "max_pairwise_features": 30
+      },
+      "detected_features": {
+        "numerical": [
+          "Measurement"
+        ],
+        "categorical": [
+          "Region"
+        ],
+        "datetime": [
+          "ObservedAt"
+        ]
+      },
+      "generated_plot_count": 6,
+      "skipped_plot_count": 1,
+      "plot_error_count": 0,
+      "generated_plots": [
+        {
+          "plot_id": "target_distribution",
+          "title": "Target distribution",
+          "description": "Class counts for classification or a histogram and boxplot for regression.",
+          "status": "generated",
+          "file_name": "target_distribution.png",
+          "relative_path": "target_distribution.png",
+          "mime_type": "image/png",
+          "image_format": "png",
+          "features": [
+            "Outcome"
+          ],
+          "rows_used": 48,
+          "notes": [],
+          "overwrote_existing_file": false,
+          "artifact_url": "/analysis/eda/artifacts/22222222222222222222222222222222/target_distribution.png"
+        },
+        {
+          "plot_id": "missingness",
+          "title": "Missing-value percentages",
+          "description": "Percentage of unavailable values in affected columns.",
+          "status": "generated",
+          "file_name": "missingness.png",
+          "relative_path": "missingness.png",
+          "mime_type": "image/png",
+          "image_format": "png",
+          "features": [
+            "Measurement"
+          ],
+          "rows_used": 48,
+          "notes": [],
+          "overwrote_existing_file": false,
+          "artifact_url": "/analysis/eda/artifacts/22222222222222222222222222222222/missingness.png"
+        },
+        {
+          "plot_id": "numerical_distributions",
+          "title": "Numerical feature distributions",
+          "description": "Bounded histograms for numerical candidate features.",
+          "status": "generated",
+          "file_name": "numerical_distributions.png",
+          "relative_path": "numerical_distributions.png",
+          "mime_type": "image/png",
+          "image_format": "png",
+          "features": [
+            "Measurement"
+          ],
+          "rows_used": 48,
+          "notes": [
+            "Dashed lines show feature medians."
+          ],
+          "overwrote_existing_file": false,
+          "artifact_url": "/analysis/eda/artifacts/22222222222222222222222222222222/numerical_distributions.png"
+        },
+        {
+          "plot_id": "categorical_distributions",
+          "title": "Categorical feature distributions",
+          "description": "Top category counts with bounded cardinality.",
+          "status": "generated",
+          "file_name": "categorical_distributions.png",
+          "relative_path": "categorical_distributions.png",
+          "mime_type": "image/png",
+          "image_format": "png",
+          "features": [
+            "Region"
+          ],
+          "rows_used": 48,
+          "notes": [],
+          "overwrote_existing_file": false,
+          "artifact_url": "/analysis/eda/artifacts/22222222222222222222222222222222/categorical_distributions.png"
+        },
+        {
+          "plot_id": "feature_target_relationships",
+          "title": "Leading feature-target relationships",
+          "description": "Problem-type-aware views of the highest-ranked candidate features.",
+          "status": "generated",
+          "file_name": "feature_target_relationships.png",
+          "relative_path": "feature_target_relationships.png",
+          "mime_type": "image/png",
+          "image_format": "png",
+          "features": [
+            "ObservedAt",
+            "Measurement",
+            "Region"
+          ],
+          "rows_used": 48,
+          "notes": [
+            "Plots show association and do not establish causation."
+          ],
+          "overwrote_existing_file": false,
+          "artifact_url": "/analysis/eda/artifacts/22222222222222222222222222222222/feature_target_relationships.png"
+        },
+        {
+          "plot_id": "datetime_overview",
+          "title": "Datetime observation patterns",
+          "description": "Observed-row frequency across detected datetime features.",
+          "status": "generated",
+          "file_name": "datetime_overview.png",
+          "relative_path": "datetime_overview.png",
+          "mime_type": "image/png",
+          "image_format": "png",
+          "features": [
+            "ObservedAt"
+          ],
+          "rows_used": 48,
+          "notes": [
+            "ObservedAt uses daily bins."
+          ],
+          "overwrote_existing_file": false,
+          "artifact_url": "/analysis/eda/artifacts/22222222222222222222222222222222/datetime_overview.png"
+        }
+      ],
+      "skipped_plots": [
+        {
+          "plot_id": "correlation_heatmap",
+          "title": "Numerical correlation heatmap",
+          "reason": "At least two numerical candidate features are required."
+        }
+      ],
+      "plot_errors": [],
+      "overwritten_files": [],
+      "source_dataframe_modified": false,
+      "automatic_data_modification_performed": false,
+      "limitations": [
+        "Plots are exploratory summaries and do not establish causation or model usefulness.",
+        "Raw-observation plots use deterministic sampling when the dataset exceeds max_plot_rows.",
+        "Displayed categories and features are bounded for readability and performance.",
+        "Generated files may contain sensitive labels or distributions and require the same access controls as the source dataset."
+      ]
+    }
+  }
+}

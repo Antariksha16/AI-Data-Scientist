@@ -1,0 +1,68 @@
+.workflow-step { width: 100%; border: 0; background: transparent; text-align: left; font: inherit; }
+.workflow-step:enabled { cursor: pointer; }
+.workflow-step:disabled { cursor: default; opacity: 1; }
+.workflow-step:focus-visible { outline: 3px solid #5ccef0; outline-offset: 3px; }
+.workflow-step > .step-index { display: grid; margin: 0; opacity: 1; font-size: .83rem; }
+.workflow-step > .workflow-copy { display: block; margin: 0; opacity: 1; font: inherit; }
+section[id] { scroll-margin-top: 24px; }
+.explore-section { margin-top: 28px; min-width: 0; }
+.eda-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; padding: 22px; border: 1px solid var(--slate-200); border-radius: 16px; background: #f7fbfe; }
+.eda-controls > div:first-child { flex: 1 1 200px; min-width: 0; }
+.eda-controls > div:first-child > span, .eda-controls > div:first-child > strong { display: block; overflow-wrap: anywhere; }
+.eda-controls strong { font-size: 22px; color: var(--navy-900); }
+.eda-controls > div:first-child > span:last-child { color: var(--slate-600); margin-top: 4px; }
+.eda-checkbox { display: flex; min-height: 44px; align-items: center; gap: 10px; cursor: pointer; color: var(--slate-700); }
+.eda-checkbox input { width: 18px; height: 18px; accent-color: var(--teal-600); }
+.eda-note { padding: 16px 20px; margin: 20px 0; color: #24546a; background: #eef7fb; border-left: 3px solid var(--blue-600); border-radius: 6px; font-size: 15px; line-height: 1.65; overflow-wrap: anywhere; }
+.eda-note-warning { color: #794616; background: #fff7e8; border-left-color: #b87317; }
+.eda-error { padding: 20px; margin-top: 20px; background: #fff0ef; border: 1px solid #edb6b0; border-radius: 12px; color: #983630; }
+.eda-report { margin-top: 30px; min-width: 0; }
+.eda-report-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.eda-report-heading h3 { margin: 4px 0; font-size: 28px; color: var(--navy-900); overflow-wrap: anywhere; }
+.eda-report-heading p { margin: 6px 0; color: var(--slate-600); overflow-wrap: anywhere; }
+.eda-badge { display: inline-block; flex-shrink: 0; font-size: 13px; font-weight: 700; padding: 7px 12px; border-radius: 7px; text-transform: capitalize; background: #eaf2f7; color: #38566b; }
+.eda-badge.success { background: var(--teal-100); color: #08645d; }
+.eda-badge.warning { background: #fff0d5; color: #835015; }
+.eda-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 12px; margin: 22px 0; }
+.eda-facts > div { padding: 16px; min-width: 0; border: 1px solid var(--slate-200); border-radius: 12px; background: #fbfdff; }
+.eda-facts dt { color: var(--slate-600); font-size: 13px; line-height: 1.5; text-transform: uppercase; letter-spacing: .035em; }
+.eda-facts dd { margin: 7px 0 0; color: var(--navy-900); font-size: 17px; font-weight: 600; overflow-wrap: anywhere; line-height: 1.6; }
+.eda-section { padding: 28px 0; border-top: 1px solid var(--slate-200); min-width: 0; }
+.eda-section > h3 { font-size: 21px; color: var(--navy-900); margin: 0 0 16px; }
+.eda-section p { line-height: 1.65; }
+.eda-section > p { color: var(--slate-600); }
+.eda-insights { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 20px; }
+.eda-insight { padding: 22px; border: 1px solid var(--slate-200); border-radius: 14px; min-width: 0; }
+.eda-insight h4 { margin: 14px 0 8px; color: var(--navy-900); font-size: 17px; }
+.eda-insight p { color: var(--slate-600); margin: 10px 0; font-size: 15px; overflow-wrap: anywhere; }
+.eda-insight .eda-action { color: #0c675f; }
+.eda-insight .eda-facts { grid-template-columns: 1fr; }
+.eda-insight .eda-facts dd { font-size: 14px; font-weight: 400; }
+.eda-details { margin-top: 20px; border: 1px solid var(--slate-200); border-radius: 10px; padding: 15px 18px; min-width: 0; }
+.eda-section summary { cursor: pointer; color: var(--slate-700); font-weight: 600; }
+.eda-section summary:focus-visible, .eda-link:focus-visible { outline: 3px solid var(--blue-600); outline-offset: 4px; }
+.eda-section details[open] > summary { margin-bottom: 16px; }
+.eda-list { margin: 12px 0; padding-left: 24px; color: var(--slate-700); }
+.eda-list li { margin: 10px 0; line-height: 1.65; overflow-wrap: anywhere; }
+.eda-section caption { text-align: left; color: var(--slate-600); padding: 12px 4px; font-size: 14px; }
+.eda-section table { font-size: 14px; }
+.eda-section td { max-width: 340px; white-space: normal; overflow-wrap: anywhere; }
+.eda-pagination { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 12px; margin: 16px 0; color: var(--slate-600); font-size: 14px; }
+.eda-pagination .secondary-button { padding: 8px 14px; }
+.explore-section .secondary-button { min-height: 40px; margin-top: 0; }
+.eda-chart-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.eda-chart { border: 1px solid var(--slate-200); border-radius: 14px; padding: 18px; margin: 0; min-width: 0; }
+.eda-chart figcaption { font-size: 17px; font-weight: 650; color: var(--navy-900); margin-bottom: 16px; }
+.eda-chart img { display: block; width: 100%; height: auto; object-fit: contain; border-radius: 6px; }
+.eda-link { display: inline-block; color: #106e9f; font-weight: 650; text-decoration: underline; text-underline-offset: 4px; line-height: 1.5; margin-top: 14px; }
+.eda-caption { font-size: 14px; color: var(--slate-600); }
+@media (max-width: 1100px) { .eda-chart-grid, .eda-insights { grid-template-columns: 1fr; } }
+@media (max-width: 600px) {
+  .eda-controls { padding: 16px; align-items: stretch; }
+  .eda-controls .primary-button { width: 100%; justify-content: center; }
+  .eda-report-heading { align-items: flex-start; }
+  .eda-report-heading h3 { font-size: 23px; }
+  .eda-section { padding: 22px 0; }
+  .eda-chart, .eda-insight, .eda-details { padding: 14px; }
+  .eda-facts { grid-template-columns: 1fr; }
+}
