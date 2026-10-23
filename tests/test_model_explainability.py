@@ -4,13 +4,13 @@ import pandas as pd
 import pytest
 from pandas.testing import assert_frame_equal, assert_series_equal
 
-from backend.app.pipeline.explainability_config import (
+from ml_pipeline.explainability_config import (
     ExplainabilityConfig,
 )
-from backend.app.pipeline.model_explainability import (
+from ml_pipeline.model_explainability import (
     generate_model_explanations,
 )
-from backend.app.pipeline.training import train_and_compare_models
+from ml_pipeline.training import train_and_compare_models
 from tests.test_training import (
     _classification_dataframe,
     _fast_config,

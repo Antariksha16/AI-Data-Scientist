@@ -4,7 +4,7 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
-from backend.app.core.eda_config import EDAConfig
+from ml_pipeline.eda_config import EDAConfig
 
 
 def _safe_number(

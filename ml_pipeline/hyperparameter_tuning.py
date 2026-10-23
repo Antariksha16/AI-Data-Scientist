@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.model_selection import RandomizedSearchCV
 from sklearn.pipeline import Pipeline
 
-from backend.app.pipeline.tuning_config import TuningConfig
+from ml_pipeline.tuning_config import TuningConfig
 
 
 def get_hyperparameter_search_space(

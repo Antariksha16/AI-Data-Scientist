@@ -4,7 +4,7 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from backend.app.pipeline.model_artifacts import (
+from ml_pipeline.model_artifacts import (
     MANIFEST_FILENAME,
     PIPELINE_FILENAME,
     REPORT_FILENAME,
@@ -12,7 +12,7 @@ from backend.app.pipeline.model_artifacts import (
     load_model_artifact,
     verify_artifact_bundle,
 )
-from backend.app.pipeline.training import train_and_compare_models
+from ml_pipeline.training import train_and_compare_models
 from tests.test_training import (
     _classification_dataframe,
     _fast_config,

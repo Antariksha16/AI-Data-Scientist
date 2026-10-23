@@ -1,6 +1,6 @@
 import pytest
 
-from backend.app.core.eda_config import EDAConfig
+from ml_pipeline.eda_config import EDAConfig
 
 
 def test_relationship_configuration_defaults():

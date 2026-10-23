@@ -6,8 +6,8 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
-from backend.app.core.eda_config import EDAConfig
-from backend.app.pipeline.eda_statistics import (
+from ml_pipeline.eda_config import EDAConfig
+from ml_pipeline.eda_statistics import (
     generate_datetime_statistics,
 )
 

@@ -10,7 +10,7 @@ from sklearn.metrics import (
 )
 from sklearn.pipeline import Pipeline
 
-from backend.app.pipeline.explainability_config import (
+from ml_pipeline.explainability_config import (
     ExplainabilityConfig,
 )
 

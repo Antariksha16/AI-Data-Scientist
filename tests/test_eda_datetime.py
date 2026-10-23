@@ -3,8 +3,8 @@ import json
 import pandas as pd
 import pytest
 
-from backend.app.core.eda_config import EDAConfig
-from backend.app.pipeline.eda_statistics import (
+from ml_pipeline.eda_config import EDAConfig
+from ml_pipeline.eda_statistics import (
     generate_categorical_statistics,
     generate_datetime_statistics,
 )

@@ -5,33 +5,33 @@ from typing import Any, Callable
 import numpy as np
 import pandas as pd
 
-from backend.app.core.eda_config import EDAConfig
-from backend.app.pipeline.cleaner import create_cleaning_plan
-from backend.app.pipeline.eda_overview import (
+from ml_pipeline.eda_config import EDAConfig
+from ml_pipeline.cleaner import create_cleaning_plan
+from ml_pipeline.eda_overview import (
     generate_dataset_overview,
 )
-from backend.app.pipeline.eda_insights import (
+from ml_pipeline.eda_insights import (
     generate_eda_insights,
 )
-from backend.app.pipeline.eda_relationships import (
+from ml_pipeline.eda_relationships import (
     generate_feature_feature_relationships,
     generate_feature_target_relationships,
 )
-from backend.app.pipeline.eda_statistics import (
+from ml_pipeline.eda_statistics import (
     generate_categorical_statistics,
     generate_datetime_statistics,
     generate_numerical_statistics,
 )
-from backend.app.pipeline.eda_target import (
+from ml_pipeline.eda_target import (
     generate_target_statistics,
 )
-from backend.app.pipeline.eda_visualizations import (
+from ml_pipeline.eda_visualizations import (
     generate_eda_visualizations,
 )
-from backend.app.pipeline.leakage import (
+from ml_pipeline.leakage import (
     detect_potential_leakage,
 )
-from backend.app.pipeline.outliers import analyze_outliers
+from ml_pipeline.outliers import analyze_outliers
 
 
 EDA_REPORT_VERSION = "1.0"

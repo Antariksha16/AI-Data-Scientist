@@ -1,9 +1,9 @@
 import pandas as pd
 import pytest
 
-from backend.app.pipeline.cleaner import create_cleaning_plan
-from backend.app.pipeline.outliers import analyze_outliers
-from backend.app.pipeline.preprocessing import (
+from ml_pipeline.cleaner import create_cleaning_plan
+from ml_pipeline.outliers import analyze_outliers
+from ml_pipeline.preprocessing import (
     prepare_dataset_for_modeling,
 )
 

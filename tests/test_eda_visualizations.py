@@ -6,8 +6,8 @@ import matplotlib.figure
 import pandas as pd
 import pytest
 
-from backend.app.core.eda_config import EDAConfig
-from backend.app.pipeline.eda_visualizations import (
+from ml_pipeline.eda_config import EDAConfig
+from ml_pipeline.eda_visualizations import (
     _unique_display_labels,
     generate_eda_visualizations,
 )

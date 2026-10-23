@@ -6,14 +6,14 @@ import pandas as pd
 import pytest
 from sklearn.model_selection import train_test_split
 
-import backend.app.pipeline.training as training_module
-from backend.app.pipeline.model_recommender import (
+import ml_pipeline.training as training_module
+from ml_pipeline.model_recommender import (
     describe_user_model_override,
     recommend_models,
 )
-from backend.app.pipeline.model_registry import get_model_registry
-from backend.app.pipeline.training import train_and_compare_models
-from backend.app.pipeline.training_config import TrainingConfig
+from ml_pipeline.model_registry import get_model_registry
+from ml_pipeline.training import train_and_compare_models
+from ml_pipeline.training_config import TrainingConfig
 
 
 def _classification_dataframe(rows: int = 120) -> pd.DataFrame:

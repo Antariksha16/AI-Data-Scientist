@@ -8,37 +8,37 @@ from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
 from backend.app.core import dataset_files
-from backend.app.core.eda_config import EDAConfig
-from backend.app.pipeline.analyzer import analyze_target
-from backend.app.pipeline.eda import generate_eda_report
-from backend.app.pipeline.model_artifacts import (
+from ml_pipeline.eda_config import EDAConfig
+from ml_pipeline.analyzer import analyze_target
+from ml_pipeline.eda import generate_eda_report
+from ml_pipeline.model_artifacts import (
     MANIFEST_FILENAME,
     PIPELINE_FILENAME,
     REPORT_FILENAME,
     export_model_artifacts,
 )
-from backend.app.pipeline.explainability_config import (
+from ml_pipeline.explainability_config import (
     ExplainabilityConfig,
 )
-from backend.app.pipeline.explainability_visualizations import (
+from ml_pipeline.explainability_visualizations import (
     generate_explainability_visualizations,
 )
-from backend.app.pipeline.model_explainability import (
+from ml_pipeline.model_explainability import (
     generate_model_explanations,
 )
-from backend.app.pipeline.professional_report import (
+from ml_pipeline.professional_report import (
     generate_professional_report,
 )
-from backend.app.pipeline.inference import (
+from ml_pipeline.inference import (
     DEFAULT_MAX_PREDICTION_ROWS,
     InferenceArtifactError,
     InferenceInputError,
     describe_model_input,
     predict_with_model_artifact,
 )
-from backend.app.pipeline.training import train_and_compare_models
-from backend.app.pipeline.training_config import TrainingConfig
-from backend.app.pipeline.tuning_config import TuningConfig
+from ml_pipeline.training import train_and_compare_models
+from ml_pipeline.training_config import TrainingConfig
+from ml_pipeline.tuning_config import TuningConfig
 
 
 router = APIRouter(
