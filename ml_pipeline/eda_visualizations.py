@@ -1,4 +1,4 @@
-﻿import math
+import math
 import os
 import threading
 import uuid
@@ -14,8 +14,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from backend.app.core.eda_config import EDAConfig
-from backend.app.pipeline.eda_target import (
+from ml_pipeline.eda_config import EDAConfig
+from ml_pipeline.eda_target import (
     generate_target_statistics,
 )
 
@@ -98,7 +98,7 @@ def _display_label(value: Any, maximum_length: int = 28) -> str:
     text = text.replace("\n", " ").replace("\r", " ").strip()
 
     if len(text) > maximum_length:
-        return f"{text[: maximum_length - 1]}â€¦"
+        return f"{text[: maximum_length - 1]}…"
 
     return text
 
@@ -1260,7 +1260,7 @@ def generate_eda_visualizations(
 
         _finalize_figure(
             figure,
-            "Leading Featureâ€“Target Relationships",
+            "Leading Feature–Target Relationships",
         )
         return figure, plotted_features, len(plot_df), [
             "Plots show association and do not establish causation."

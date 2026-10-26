@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 from sklearn.pipeline import Pipeline
 
-from backend.app.pipeline.model_artifacts import (
+from ml_pipeline.model_artifacts import (
     MANIFEST_FILENAME,
     load_model_artifact,
     verify_artifact_bundle,

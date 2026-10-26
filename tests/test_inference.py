@@ -5,17 +5,17 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from backend.app.pipeline.inference import (
+from ml_pipeline.inference import (
     InferenceArtifactError,
     InferenceInputError,
     describe_model_input,
     predict_with_model_artifact,
 )
-from backend.app.pipeline.model_artifacts import (
+from ml_pipeline.model_artifacts import (
     export_model_artifacts,
 )
-from backend.app.pipeline.training import train_and_compare_models
-from backend.app.pipeline.training_config import TrainingConfig
+from ml_pipeline.training import train_and_compare_models
+from ml_pipeline.training_config import TrainingConfig
 
 
 def _fast_config() -> TrainingConfig:

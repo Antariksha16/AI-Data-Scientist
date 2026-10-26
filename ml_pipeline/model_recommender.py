@@ -3,7 +3,7 @@ from typing import Any
 
 import pandas as pd
 
-from backend.app.pipeline.model_registry import ModelSpec
+from ml_pipeline.model_registry import ModelSpec
 
 
 SUPPORTED_PROBLEM_TYPES = {"classification", "regression"}

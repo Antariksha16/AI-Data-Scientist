@@ -3,8 +3,8 @@ import json
 import pandas as pd
 import pytest
 
-from backend.app.core.eda_config import EDAConfig
-from backend.app.pipeline.eda_overview import (
+from ml_pipeline.eda_config import EDAConfig
+from ml_pipeline.eda_overview import (
     generate_dataset_overview,
 )
 

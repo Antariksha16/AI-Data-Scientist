@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from backend.app.pipeline.eda_insights import (
+from ml_pipeline.eda_insights import (
     generate_eda_insights,
 )
 

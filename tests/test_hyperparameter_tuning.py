@@ -2,12 +2,12 @@ import json
 
 import pytest
 
-import backend.app.pipeline.training as training_module
-from backend.app.pipeline.hyperparameter_tuning import (
+import ml_pipeline.training as training_module
+from ml_pipeline.hyperparameter_tuning import (
     get_hyperparameter_search_space,
 )
-from backend.app.pipeline.training import train_and_compare_models
-from backend.app.pipeline.tuning_config import TuningConfig
+from ml_pipeline.training import train_and_compare_models
+from ml_pipeline.tuning_config import TuningConfig
 from tests.test_training import (
     _classification_dataframe,
     _fast_config,

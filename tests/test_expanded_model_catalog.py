@@ -3,14 +3,14 @@ import json
 import numpy as np
 import pandas as pd
 
-from backend.app.pipeline.hyperparameter_tuning import (
+from ml_pipeline.hyperparameter_tuning import (
     get_hyperparameter_search_space,
 )
-from backend.app.pipeline.model_recommender import recommend_models
-from backend.app.pipeline.model_registry import get_model_registry
-from backend.app.pipeline.training import train_and_compare_models
-from backend.app.pipeline.training_config import TrainingConfig
-from backend.app.pipeline.tuning_config import TuningConfig
+from ml_pipeline.model_recommender import recommend_models
+from ml_pipeline.model_registry import get_model_registry
+from ml_pipeline.training import train_and_compare_models
+from ml_pipeline.training_config import TrainingConfig
+from ml_pipeline.tuning_config import TuningConfig
 
 
 CLASSIFICATION_MODELS = {

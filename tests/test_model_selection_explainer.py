@@ -5,12 +5,12 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from backend.app.pipeline.model_registry import get_model_registry
-from backend.app.pipeline.model_selection_explainer import (
+from ml_pipeline.model_registry import get_model_registry
+from ml_pipeline.model_selection_explainer import (
     generate_model_selection_rationale,
 )
-from backend.app.pipeline.training import train_and_compare_models
-from backend.app.pipeline.training_config import TrainingConfig
+from ml_pipeline.training import train_and_compare_models
+from ml_pipeline.training_config import TrainingConfig
 
 
 def _classification_dataframe(rows: int = 100) -> pd.DataFrame:

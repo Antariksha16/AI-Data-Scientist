@@ -3,7 +3,7 @@ import json
 import pandas as pd
 import pytest
 
-from backend.app.pipeline.eda_target import (
+from ml_pipeline.eda_target import (
     generate_target_statistics,
 )
 

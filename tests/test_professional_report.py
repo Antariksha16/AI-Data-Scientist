@@ -4,7 +4,7 @@ from pathlib import Path
 import pytest
 from PIL import Image
 
-from backend.app.pipeline.professional_report import (
+from ml_pipeline.professional_report import (
     MARKDOWN_REPORT_FILENAME,
     PDF_REPORT_FILENAME,
     generate_professional_report,

@@ -1,6 +1,6 @@
 import pandas as pd
 
-from backend.app.pipeline.target_suggester import (
+from ml_pipeline.target_suggester import (
     suggest_target_columns,
 )
 

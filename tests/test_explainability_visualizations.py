@@ -3,7 +3,7 @@ from copy import deepcopy
 
 import pytest
 
-from backend.app.pipeline.explainability_visualizations import (
+from ml_pipeline.explainability_visualizations import (
     NATIVE_PLOT_ID,
     PERMUTATION_PLOT_ID,
     generate_explainability_visualizations,

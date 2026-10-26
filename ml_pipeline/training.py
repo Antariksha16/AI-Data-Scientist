@@ -30,26 +30,26 @@ from sklearn.model_selection import (
 )
 from sklearn.pipeline import Pipeline
 
-from backend.app.pipeline.analyzer import analyze_target
-from backend.app.pipeline.hyperparameter_tuning import (
+from ml_pipeline.analyzer import analyze_target
+from ml_pipeline.hyperparameter_tuning import (
     tune_model_pipeline,
 )
-from backend.app.pipeline.model_registry import (
+from ml_pipeline.model_registry import (
     ModelSpec,
     get_model_registry,
 )
-from backend.app.pipeline.model_recommender import (
+from ml_pipeline.model_recommender import (
     describe_user_model_override,
     recommend_models,
 )
-from backend.app.pipeline.model_selection_explainer import (
+from ml_pipeline.model_selection_explainer import (
     generate_model_selection_rationale,
 )
-from backend.app.pipeline.preprocessing import (
+from ml_pipeline.preprocessing import (
     prepare_dataset_for_modeling,
 )
-from backend.app.pipeline.training_config import TrainingConfig
-from backend.app.pipeline.tuning_config import TuningConfig
+from ml_pipeline.training_config import TrainingConfig
+from ml_pipeline.tuning_config import TuningConfig
 
 
 SUPPORTED_PROBLEM_TYPES = {"classification", "regression"}

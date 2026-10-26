@@ -3,8 +3,8 @@ import json
 import pandas as pd
 import pytest
 
-from backend.app.core.eda_config import EDAConfig
-from backend.app.pipeline.eda_relationships import (
+from ml_pipeline.eda_config import EDAConfig
+from ml_pipeline.eda_relationships import (
     generate_feature_target_relationships,
 )
 

@@ -5,8 +5,8 @@ from uuid import uuid4
 from fastapi import APIRouter, File, HTTPException, UploadFile
 
 from backend.app.core import dataset_files
-from backend.app.pipeline.analyzer import analyze_dataset
-from backend.app.pipeline.target_suggester import suggest_target_columns
+from ml_pipeline.analyzer import analyze_dataset
+from ml_pipeline.target_suggester import suggest_target_columns
 
 
 router = APIRouter(tags=["Datasets"])

@@ -2,7 +2,7 @@ from copy import deepcopy
 import math
 from typing import Any
 
-from backend.app.pipeline.model_registry import ModelSpec
+from ml_pipeline.model_registry import ModelSpec
 
 
 SUPPORTED_DIRECTIONS = {"higher", "lower"}

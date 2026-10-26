@@ -2,7 +2,7 @@ from dataclasses import FrozenInstanceError
 
 import pytest
 
-from backend.app.core.eda_config import EDAConfig
+from ml_pipeline.eda_config import EDAConfig
 
 
 def test_default_eda_configuration():

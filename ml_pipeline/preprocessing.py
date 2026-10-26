@@ -2,13 +2,13 @@ from typing import Any
 
 import pandas as pd
 
-from backend.app.pipeline.analyzer import analyze_target
-from backend.app.pipeline.cleaner import create_cleaning_plan
-from backend.app.pipeline.leakage import (
+from ml_pipeline.analyzer import analyze_target
+from ml_pipeline.cleaner import create_cleaning_plan
+from ml_pipeline.leakage import (
     detect_potential_leakage,
 )
-from backend.app.pipeline.outliers import analyze_outliers
-from backend.app.pipeline.preprocessor import (
+from ml_pipeline.outliers import analyze_outliers
+from ml_pipeline.preprocessor import (
     build_preprocessor,
 )
 

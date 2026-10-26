@@ -3,8 +3,8 @@ import json
 import pandas as pd
 import pytest
 
-from backend.app.core.eda_config import EDAConfig
-from backend.app.pipeline.eda import generate_eda_report
+from ml_pipeline.eda_config import EDAConfig
+from ml_pipeline.eda import generate_eda_report
 
 
 def _classification_dataframe() -> pd.DataFrame:
